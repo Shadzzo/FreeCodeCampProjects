@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">    
+</head>
+<body>
+    <!-- Form Heading -->
+    <div class="header-area">
+        <h1 id="title"> Survey Form </h1>
+        <p id="description">  Thank you for taking the time to help us improve the platform </p> 
+    </div>   
+    <!-- Main Body -->
+    <div class="wrapper">
+        <form id="survey-form" action="index.html" method="get">
+            <!-- Keyboard Input Area -->
+            <div class="text-wrapper">
+                <div class="text-entry">
+                    <label id="name-label" for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Enter Name" class="text-input" required>
+                </div>
+                <div class="text-entry">
+                    <label id="email-label" for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter email" class="text-input" required>      
+                </div>
+                <div class="text-entry">
+                    <label id="number-label" for="number">Age</label>
+                    <input type="number" name="age" id="number" min="13" max="99" placeholder="Your Age" class="text-input" required>
+                </div>
+            </div>
+            <!-- Dropdown Area -->
+            <div class="drop-wrapper">
+                <label for="dropdown">  Which option best describes your current role?</label>
+                <select id="dropdown" class="drop-input">
+                    <option disabled value="none"> Select current role </option>
+                    <option value="student"> Student </option>
+                    <option value="fullJob"> Full Time Job </option>
+                    <option value="fullLearn"> Full Time Learner </option>
+                    <option value="notSay"> Prefer not to say </option>
+                    <option value="other"> Other </option>
+                </select>
+            </div>
+            <!-- Radio Area -->
+            <div class="radio-wrapper">
+                <label for="radio"> Would you recommend freeCodeCamp to a friend? </label>
+                <ul id="radio">
+                    <li class="radio-option">
+                        <label>
+                        <input type="radio" name="radio-button" value="HTML">
+                        Definitely 
+                        </label>
+                    </li>
+                    <li class="radio-option">
+                        <label>
+                        <input type="radio" name="radio-button" value="HTML">
+                        Maybe
+                        </label>
+                    </li>
+                    <li class="radio-option">
+                        <label>
+                        <input type="radio" name="radio-button" value="HTML">
+                        Not sure
+                        </label>
+                    </li>
+                </ul>
+            </div>
+            <!-- Dropdown Area -->
+            <div class="drop-wrapper">
+                <label for="dropdown2">  What is your favorite feature of freeCodeCamp? </label>
+                <select id="dropdown2" class="drop-input">
+                    <option disabled value="none"> Select an option </option>
+                    <option value="challanges"> Challanges </option>
+                    <option value="projects"> Projects </option>
+                    <option value="community"> Community </option>
+                    <option value="openSource"> Open Source </option>
+                </select>
+            </div>
+            <!-- Checkbox Area -->
+            <div class="check-wrapper">
+                <label for="check"> What would you like to see improved? <span id="check-span"> (Check all that apply) </span> </label>
+                <ul id="check">
+                    <li class="check-option">
+                        <label> <input type="checkbox" name="fepBox" value="fep"> Front-end Projects </label>
+                    </li>
+                    <li class="check-option">
+                        <label> <input type="checkbox" name="bepBox" value="bep"> Back-end Projects </label>
+                    </li>
+                    <li class="check-option">
+                        <label> <input type="checkbox" name="dvBox" value="dv"> Data Visualization </label>
+                    </li>
+                    <li class="check-option">
+                        <label> <input type="checkbox" name="chalBox" value=" chal"> Challenges </label>
+                    </li>
+                    <li class="check-option">
+                        <label> <input type="checkbox" name="oscBox" value="osc"> Open Source Community </label>
+                    </li>
+                    <li class="check-option">
+                        <label> <input type="checkbox" name="ghrBox" value="ghr"> Gitter help rooms </label>
+                    </li>
+                    <li class="check-option">
+                        <label> <input type="checkbox" name="cmBox" value="cm"> City Meetups </label>
+                    </li>
+                    <li class="check-option">
+                        <label> <input type="checkbox" name="wikiBox" value="wiki"> Wiki </label>
+                    </li>
+                    <li class="check-option">
+                        <label> <input type="checkbox" name="forumBox" value="forum"> Forum </label>
+                    </li>
+                    <li class="check-option">
+                        <label> <input type="checkbox" name="acBox" value="ac"> Additional Courses </label>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- Comment Area -->
+            <div class="comment-wrapper">
+                <label for="comments">Any comments or suggestions?</label>
+                <textarea id="comments" placeholder="Enter your comment here..."> </textarea>
+            </div>
+            <button type="submit" id="submit"> Submit </button>  
+        </form>
+    </div>
+</body>
+</html>

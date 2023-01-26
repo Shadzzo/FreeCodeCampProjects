@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+    background-color: #eeeeee;
+    color: #333;
+    font-size: 18px;  
+}
+
+.header-area{
+    padding-top: 36px;
+}
+
+#img-div{
+    background-color: #ffffff;
+    padding: 20px 0;
+    margin: 0 20px;
+}
+
+#image{
+    display: block;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+#title{
+    font-size: 48px;
+}
+
+.main-area{
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#area-title{
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 60px; 
+}
+
+.main-list{
+    margin-bottom: 50px;
+}
+
+li{ 
+    margin-bottom: 25px;  
+}
+
+.dates{
+    font-weight: bold;
+}
+
+.quote{
+    margin-left: 25px;
+    font-style: italic;
+}
+
+.more-info{
+    margin: 50px auto;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#tribute-info{
+    display: inline;
+}
